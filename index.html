@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Summit Hub</title>
 
 <style>
@@ -14,7 +16,7 @@
 body{
     background:#0f1117;
     color:white;
-    font-family:Segoe UI, sans-serif;
+    font-family:Segoe UI, Arial, sans-serif;
 }
 
 .hero{
@@ -24,33 +26,34 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:20px;
 }
 
 .logo{
-    font-size:72px;
+    font-size:80px;
     font-weight:800;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .subtitle{
-    color:#9ca3af;
     font-size:22px;
+    color:#9ca3af;
     margin-bottom:40px;
 }
 
-.download{
+.download-btn{
     background:#5865F2;
     color:white;
     text-decoration:none;
-    padding:18px 45px;
-    border-radius:12px;
+    padding:18px 42px;
+    border-radius:14px;
     font-size:20px;
     font-weight:700;
-    transition:0.2s;
+    transition:.2s;
 }
 
-.download:hover{
-    transform:translateY(-2px);
+.download-btn:hover{
+    transform:translateY(-3px);
 }
 
 .version{
@@ -59,13 +62,14 @@ body{
 }
 
 .features{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:100px 30px;
 }
 
-.features h2{
+.features-title{
     text-align:center;
+    font-size:42px;
     margin-bottom:50px;
 }
 
@@ -77,8 +81,8 @@ body{
 
 .card{
     background:#181c25;
+    border-radius:18px;
     padding:25px;
-    border-radius:15px;
 }
 
 .card h3{
@@ -87,6 +91,13 @@ body{
 
 .card p{
     color:#9ca3af;
+    line-height:1.5;
+}
+
+.footer{
+    text-align:center;
+    color:#7f8694;
+    padding:40px;
 }
 </style>
 </head>
@@ -95,54 +106,69 @@ body{
 
 <section class="hero">
 
-<div class="logo">
-Summit Hub
-</div>
+    <div class="logo">
+        Summit Hub
+    </div>
 
-<div class="subtitle">
-The official launcher for Summit projects.
-</div>
+    <div class="subtitle">
+        The official launcher for Summit projects.
+    </div>
 
-<a class="download"
-href="https://github.com/archie070/SummitHub/releases/latest">
-Download Summit Hub
-</a>
+    <a class="download-btn"
+       href="downloads/SummitHubSetup.exe"
+       download>
+        Download Summit Hub
+    </a>
 
-<div class="version">
-Version 1.0.0
-</div>
+    <div class="version">
+        Version 1.0.0
+    </div>
 
 </section>
 
 <section class="features">
 
-<h2>Features</h2>
+    <h2 class="features-title">
+        Features
+    </h2>
 
-<div class="grid">
+    <div class="grid">
 
-<div class="card">
-<h3>Fast Updates</h3>
-<p>Download new versions instantly.</p>
-</div>
+        <div class="card">
+            <h3>Fast Updates</h3>
+            <p>
+                Quickly receive the latest Summit Hub releases.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Easy Access</h3>
-<p>Launch Summit projects from one place.</p>
-</div>
+        <div class="card">
+            <h3>Central Launcher</h3>
+            <p>
+                Access all Summit projects from one place.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Secure Downloads</h3>
-<p>Official releases directly from GitHub.</p>
-</div>
+        <div class="card">
+            <h3>Simple Installation</h3>
+            <p>
+                Download, install, and launch in seconds.
+            </p>
+        </div>
 
-<div class="card">
-<h3>Future Ready</h3>
-<p>Built to support future Summit experiences.</p>
-</div>
+        <div class="card">
+            <h3>Future Ready</h3>
+            <p>
+                Built to support upcoming Summit experiences and tools.
+            </p>
+        </div>
 
-</div>
+    </div>
 
 </section>
+
+<div class="footer">
+    © 2026 Summit Hub
+</div>
 
 </body>
 </html>
