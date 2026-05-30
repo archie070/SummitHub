@@ -1,82 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Summit Hub</title>
+<meta charset="UTF-8">
+<title>Summit Hub</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#0f1117;
-            color:white;
-            text-align:center;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .hero{
-            padding-top:120px;
-        }
+body{
+    background:#0f1117;
+    color:white;
+    font-family:Segoe UI, sans-serif;
+}
 
-        h1{
-            font-size:64px;
-            margin-bottom:10px;
-        }
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
 
-        p{
-            color:#b0b0b0;
-            font-size:20px;
-        }
+.logo{
+    font-size:72px;
+    font-weight:800;
+    margin-bottom:15px;
+}
 
-        .download-btn{
-            display:inline-block;
-            margin-top:30px;
-            padding:16px 40px;
-            background:#5865F2;
-            color:white;
-            text-decoration:none;
-            border-radius:12px;
-            font-size:20px;
-            font-weight:bold;
-            transition:0.2s;
-        }
+.subtitle{
+    color:#9ca3af;
+    font-size:22px;
+    margin-bottom:40px;
+}
 
-        .download-btn:hover{
-            transform:scale(1.05);
-        }
+.download{
+    background:#5865F2;
+    color:white;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:700;
+    transition:0.2s;
+}
 
-        .card{
-            width:700px;
-            max-width:90%;
-            margin:60px auto;
-            background:#181c25;
-            padding:30px;
-            border-radius:20px;
-        }
-    </style>
+.download:hover{
+    transform:translateY(-2px);
+}
+
+.version{
+    margin-top:15px;
+    color:#7f8694;
+}
+
+.features{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 30px;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#181c25;
+    padding:25px;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#9ca3af;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="hero">
-        <h1>Summit Hub</h1>
+<section class="hero">
 
-        <p>
-            The official launcher and hub for Summit projects.
-        </p>
+<div class="logo">
+Summit Hub
+</div>
 
-        <a class="download-btn" href="#">
-            Download Now
-        </a>
-    </div>
+<div class="subtitle">
+The official launcher for Summit projects.
+</div>
 
-    <div class="card">
-        <h2>Features</h2>
+<a class="download"
+href="https://github.com/archie070/SummitHub/releases/latest">
+Download Summit Hub
+</a>
 
-        <p>
-            • Fast Updates<br>
-            • Easy Installation<br>
-            • Secure Downloads<br>
-            • Future Summit Games Support
-        </p>
-    </div>
+<div class="version">
+Version 1.0.0
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Fast Updates</h3>
+<p>Download new versions instantly.</p>
+</div>
+
+<div class="card">
+<h3>Easy Access</h3>
+<p>Launch Summit projects from one place.</p>
+</div>
+
+<div class="card">
+<h3>Secure Downloads</h3>
+<p>Official releases directly from GitHub.</p>
+</div>
+
+<div class="card">
+<h3>Future Ready</h3>
+<p>Built to support future Summit experiences.</p>
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
